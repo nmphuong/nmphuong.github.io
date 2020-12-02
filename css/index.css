@@ -1,0 +1,286 @@
+/* Index.html */
+.nav-bg-custorm {
+  background-color: rgb(200, 171, 137)!important;
+}
+nav .navbar-item:hover {
+  background: rgb(151, 124, 96)!important;
+}
+nav li a:hover {
+  border: 0.1px solid rgb(88, 63, 45)!important;
+}
+.bg-transparent{
+  background: transparent!important;
+}
+.infomation {
+  background: rgb(77, 52, 36)!important;
+}
+.search::-webkit-input-placeholder {
+  font-style: italic;
+  color: #ccb08d;
+}
+.search::-moz-placeholder {
+  font-style: italic;
+  color: #ccb08d;
+}
+.search:-ms-input-placeholder {
+  font-style: italic;
+  color: #ccb08d;
+}
+.search:-moz-placeholder {
+  font-style: italic;
+  color: #ccb08d;
+}
+input.search{
+  padding-left: 30px!important;
+  border: 1px solid #ccb08d;
+}
+.image-left {
+  top: 0;
+  left: 0;
+}
+.image-right {
+  bottom: 0;
+  right: 0;
+}
+.icon-phone{
+  transform: rotate(-45deg);
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #ccb08d;
+}
+.icon-search {
+  left: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 1.5em;
+}
+.border-radius-50{
+  border-radius: 50%!important;
+}
+.text-brown {
+  color: #ccb08d!important;
+}
+.bg-brown {
+  background: #ccb08d!important;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: block;
+  transform: scale(0);
+  transition: ease-out 0.3s;
+}
+
+#queen-nature p{
+  line-height: 1.5em;
+  color: rgb(204, 176, 141);
+}
+#queen-nature .title p {
+  font-weight: bold;
+}
+.bg-brown-opacity-50{
+  background: rgba(100, 79, 64, 0.88);
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  width: 100%;
+  top: 104%;
+  left: 0;
+}
+.navbar-nav > li > .dropdown-menu {
+  display: none;
+  transform: scale(1)!important;
+  transition: ease-out 0.3s!important;
+  background-color: #fff0;
+}
+.show {
+  display: block!important;
+  transform: scale(1)!important;
+  transition: ease-out 0.3s!important;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+#content {
+  background-image: url('../images/bg-web.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.book-calendar{
+  max-width: 370px;
+  background: rgba(240, 238, 237, 0.24);
+  border: 4px solid rgb(77, 52, 36);
+  left: 60%;
+  top: 50%;
+  transform: translate(0%, -30%);
+}
+.input-book{
+  background-color: rgba(190, 173, 152, 0.44);
+}
+.btn-book{
+  background: rgb(88, 158, 158);
+}
+.process{
+  align-items: center;
+}
+.form-control{
+  border: none;
+}
+.form-control:focus{
+  background: rgba(190, 173, 152, 0.44);
+  outline: none;
+  box-shadow: none;
+  border: rgba(190, 173, 152, 0.44);
+  border-color: rgba(190, 173, 152, 0.44);
+}
+select#branch,
+input[type="datetime-local"] {
+  height: 36px;
+}
+
+.position-fixed.help {
+  z-index: 999;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.help-services {
+  background: rgb(80, 56, 36);
+}
+.help-services .svg {
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.help-services .service {
+  height: 50px;
+  right: 0;
+}
+.text-service{
+  width: 142px;
+}
+.help-services div {
+  height: 50px;
+  background: rgb(80, 56, 36);
+  cursor: pointer;
+}
+.section-pregnancy,
+.service-spa {
+  background: rgb(200, 171, 137);
+}
+.pregnancy {
+  background: rgb(227, 209, 177);
+}
+.pregnancy-wrapper{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.pregnancy-service{
+  background: rgb(16, 84, 43);
+  color: rgb(227, 209, 177);
+}
+span.pregnancy-week-by-week {
+  font-size: 2em;
+}
+textarea{
+  resize: none;
+}
+.text-box textarea{
+  height: 280px;
+  width: 100%;
+  background: none;
+}
+.text-box textarea:focus{
+  box-shadow: none;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(80, 56, 36);
+}
+.readmore-textarea{
+  bottom: 5%;
+  right: 1%;
+  border-radius: 0;
+  background: rgb(16, 84, 43);
+  color: rgb(227, 209, 177);
+}
+a.readmore-textarea{
+  color: rgb(227, 209, 177);
+}
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+textarea::-webkit-scrollbar-track {
+  background: rgb(196, 182, 158);
+}
+textarea::-webkit-scrollbar-thumb {
+  background: rgb(80, 56, 36);
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background: rgb(80, 56, 36);
+}
+.carousel .list-item{
+  overflow: hidden;
+}
+.prev{
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.next{
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+.action-slideshow{
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(80, 56, 36);
+  color: rgb(80, 56, 36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/*  */
+@media only screen and (max-width: 992px) {
+  .book-calendar{
+    max-width: 370px;
+    background: rgba(240, 238, 237, 0.24);
+    border: 4px solid rgb(77, 52, 36);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dropdown-menu .title p {
+    text-decoration: underline;
+  }
+  .pregnancy-wrapper{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .welcome-img,
+  .logo-img {
+    text-align: center;
+  }
+  .welcome-img{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .book-calendar{
+    min-width: 90%;
+  }
+}
+
