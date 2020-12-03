@@ -163,13 +163,21 @@ input[type="datetime-local"] {
   cursor: pointer;
 }
 .section-pregnancy,
-.service-spa {
+.service-spa,
+.discount,
+.event {
   background: rgb(200, 171, 137);
 }
-.pregnancy {
+.pregnancy,
+.event-news {
   background: rgb(227, 209, 177);
 }
-.pregnancy-wrapper{
+.discount-product{
+  background: rgb(226, 194, 117);
+}
+.pregnancy-wrapper,
+.discount-product-wrapper,
+.event-news-wrapper{
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -240,7 +248,45 @@ textarea::-webkit-scrollbar-thumb:hover {
   border-radius: 50px;
   cursor: pointer;
 }
-
+.bg-brow{
+  background: rgb(107, 81, 52);
+}
+.text-area-news-event{
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 1px solid rgb(80, 56, 36);
+  color: rgb(77, 52, 36);
+}
+.news.event .content {
+  overflow: hidden;
+}
+.min-wh{
+  min-height: 300px;
+}
+.bg-img-event-news {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news.event .title span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.news.event .content span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+/* .min-w-h {
+  min-width: 500px;
+  min-height: 300px;
+} */
 /*  */
 @media only screen and (max-width: 992px) {
   .book-calendar{
