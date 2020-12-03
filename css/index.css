@@ -162,14 +162,12 @@ input[type="datetime-local"] {
   background: rgb(80, 56, 36);
   cursor: pointer;
 }
-.section-pregnancy,
-.service-spa,
-.discount,
-.event {
+.bg-wrapper {
   background: rgb(200, 171, 137);
 }
 .pregnancy,
-.event-news {
+.event-news,
+.customer-feel {
   background: rgb(227, 209, 177);
 }
 .discount-product{
@@ -177,7 +175,8 @@ input[type="datetime-local"] {
 }
 .pregnancy-wrapper,
 .discount-product-wrapper,
-.event-news-wrapper{
+.event-news-wrapper,
+.wrapper{
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -283,10 +282,56 @@ textarea::-webkit-scrollbar-thumb:hover {
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
-/* .min-w-h {
-  min-width: 500px;
-  min-height: 300px;
-} */
+.readmore-div-span{
+  border-radius: 0;
+  background: rgb(16, 84, 43);
+  color: rgb(227, 209, 177);
+  bottom: 0;
+  right: 0;
+  transform: translate(-30px,-40px);
+}
+#scroll-top {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color:rgb(227, 209, 177);
+  text-indent:-9999px;
+  display:none;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px;
+  z-index: 1000;
+}
+#scroll-top .icon-scroll-up {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: rgb(77, 52, 36);;
+}
+.bg-frame {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.bg-frame .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.infomation-customer .position-absolute{
+  bottom: -1%;
+  left: 25%;
+}
+.img-avt-customer{
+  max-width: 73px;
+  max-height: 73px;
+}
 /*  */
 @media only screen and (max-width: 992px) {
   .book-calendar{
@@ -300,7 +345,9 @@ textarea::-webkit-scrollbar-thumb:hover {
   /* .dropdown-menu .title p {
     text-decoration: underline;
   } */
-  .pregnancy-wrapper{
+  .pregnancy-wrapper,
+  .discount-product-wrapper,
+  .event-news-wrapper{
     padding-left: 0%;
     padding-right: 0%;
   }
@@ -316,9 +363,29 @@ textarea::-webkit-scrollbar-thumb:hover {
     padding-left: 15px;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .column-xl{
+    display: none;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .column-lg{
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .book-calendar{
     min-width: 90%;
+  }
+  .bg-frame {
+    background-image: none!important;
+  }
+  .description {
+    padding: 0!important;
+  }
+  .infomation-customer .position-absolute{
+    position: static!important;
   }
 }
 
