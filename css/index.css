@@ -332,6 +332,13 @@ textarea::-webkit-scrollbar-thumb:hover {
   max-width: 73px;
   max-height: 73px;
 }
+.product-queen-nature {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  background: #d5bfa3;
+  border: 1px solid #755d49;
+}
 /*  */
 @media only screen and (max-width: 992px) {
   .book-calendar{
@@ -363,10 +370,26 @@ textarea::-webkit-scrollbar-thumb:hover {
     padding-left: 15px;
   }
 }
+.btn.btn-read-more {
+  border: 1px solid rgb(151, 124, 96);
+  color: rgb(151, 124, 96);
+  border-radius: 0px;
+}
+.bg-xlad{
+  background: rgb(16, 84, 43);
+  font-size: 2em;
+  color: rgb(211, 181, 148);
+}
+.text-color-211-181-148 {
+  color: rgb(211, 181, 148);
+}
 
 @media only screen and (max-width: 991px) {
   .column-xl{
     display: none;
+  }
+  .bg-xlad{
+    font-size: 1em;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -388,4 +411,3 @@ textarea::-webkit-scrollbar-thumb:hover {
     position: static!important;
   }
 }
-
