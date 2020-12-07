@@ -354,7 +354,8 @@ textarea::-webkit-scrollbar-thumb:hover {
   } */
   .pregnancy-wrapper,
   .discount-product-wrapper,
-  .event-news-wrapper{
+  .event-news-wrapper,
+  .wrapper{
     padding-left: 0%;
     padding-right: 0%;
   }
