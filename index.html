@@ -12,122 +12,128 @@
 
 <body>
   <div class="main mh-100">
-    <div class="bg-secondary mh-100">
-      <div class="row p-0 m-0 px-5 py-3 mh-100">
-        <div class="contain col-12 p-5 bg-white">
-          <!-- Section 1 tile page -->
-          <div class="title py-3">
-            <p class="h4 font-weight-bold">
-              Thêm 1 sản phẩm mới
-            </p>
-            <p>
-              Vui lòng chọn ngành hàng phù hợp cho sản phẩm của bạn.
-            </p>
-            <hr class="bg-dark mb-3 mt-5" />
-          </div>
-          <!-- Section 2 input name product -->
-          <div class="name-product py-3">
-            <div class="col-12 p-0 m-0">
-              <div>
-                <label for="" class="text-nowrap">
-                  Tên sản phẩm:&nbsp;
-                </label>
+    <div class="mh-100">
+      <div class="mh-100">
+        <div class="row p-0 m-0 position-relative">
+          <div class="contain container-fluid">
+            <div class="bg-white col-12">
+              <!-- Section 1 tile page -->
+              <div class="title py-3">
+                <p class="h4 font-weight-bold">
+                  Thêm 1 sản phẩm mới
+                </p>
+                <p>
+                  Vui lòng chọn ngành hàng phù hợp cho sản phẩm của bạn.
+                </p>
+                <hr class="bg-dark mb-3 mt-5" />
               </div>
-              <div class="div-input-name-product position-relative">
-                <input type="text" placeholder="Nhập vào" class="input-name-product form-control" />
-                <span class="length-character-input-name-product position-absolute">
-                  0/120
+              <!-- Section 2 input name product -->
+              <div class="name-product py-3">
+                <div class="col-12 p-0 m-0">
+                  <div>
+                    <label for="" class="text-nowrap">
+                      Tên sản phẩm:&nbsp;
+                    </label>
+                  </div>
+                  <div class="div-input-name-product position-relative">
+                    <input type="text" placeholder="Nhập vào" class="input-name-product form-control" />
+                    <span class="length-character-input-name-product position-absolute">
+                      0/120
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- Section 3 Select category -->
+              <div class="div-select-category py-3">
+                <div class="col-12 p-0 m-0">
+                  <!-- Search name category -->
+                  <div class="search-category">
+                    <div class="row p-0 m-0">
+                      <div class="col-lg-6 p-0 m-0">
+                        <div class="w-100 position-relative">
+                          <input type="text" placeholder="Nhập tên ngành hàng"
+                            class="input-name-category form-control" />
+                          <button class="button-search-name-category position-absolute bg-none border-0">
+                            Q
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Select name category -->
+                  <div class="div-select-category">
+                    <div class="row p-0 m-0">
+                      <div class="col-12 p-0 m-0">
+                        <div class="div-category-select d-flex p-0 m-0 py-4">
+                          <div class="col category-parent p-0">
+                            <div class="category">
+                              <button class="btn my-1 w-100 text-nowrap text-left">
+                                <div class="row p-0 m-0">
+                                  <span class="col p-0 m-0">Bách Hoá Online</span>
+                                  <span class="col p-0 m-0">></span>
+                                </div>
+                              </button>
+                              <button class="btn my-1 w-100 text-nowrap text-left">
+                                <div class="row p-0 m-0">
+                                  <span class="col p-0 m-0">Thể Thao & Du Lịch</span>
+                                  <span class="col p-0 m-0">></span>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col category-child-1 p-0">
+                            <div class="category">
+                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
+                                <div class="row p-0 m-0">
+                                  <span class="col p-0 m-0">Trang Phục thể thao</span>
+                                  <span class="col p-0 m-0">></span>
+                                </div>
+                              </button>
+                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
+                                <div class="row p-0 m-0">
+                                  <span class="col p-0 m-0">Giày Thể Thao</span>
+                                  <span class="col p-0 m-0">></span>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col category-child-2 p-0">
+                            <div class="category">
+                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
+                                <div class="row p-0 m-0">
+                                  <span class="col p-0 m-0">Giày Sneaker Thể Thao</span>
+                                  <!-- <span class="col p-0 m-0">></span> -->
+                                </div>
+                              </button>
+                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
+                                <div class="row p-0 m-0">
+                                  <span class="col p-0 m-0">Giày Chạy Bộ</span>
+                                  <!-- <span class="col p-0 m-0">></span> -->
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Selected show -->
+              <div class="div-selected-show py-3">
+                <span class="span-selected-show">
+                  <span>Đã chọn&nbsp;:&nbsp;</span>&nbsp;<span class="text-danger">Thể Thao & Du Lịch > Giày Thể Thao >
+                    Giày
+                    Chạy Bộ </span>
                 </span>
               </div>
-            </div>
-          </div>
-          <!-- Section 3 Select category -->
-          <div class="div-select-category py-3">
-            <div class="col-12 p-0 m-0">
-              <!-- Search name category -->
-              <div class="search-category">
-                <div class="row p-0 m-0">
-                  <div class="col-lg-6 p-0 m-0">
-                    <div class="w-100 position-relative">
-                      <input type="text" placeholder="Nhập tên ngành hàng" class="input-name-category form-control" />
-                      <button class="button-search-name-category position-absolute bg-none border-0">
-                        Q
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Select name category -->
-              <div class="div-select-category">
-                <div class="row p-0 m-0">
-                  <div class="col-12 p-0 m-0">
-                    <div class="div-category-select d-flex p-0 m-0 py-4">
-                      <div class="col category-parent p-0">
-                        <div class="category">
-                          <button class="btn my-1 w-100 text-nowrap text-left">
-                            <div class="row p-0 m-0">
-                              <span class="col p-0 m-0">Bách Hoá Online</span>
-                              <span class="col p-0 m-0">></span>
-                            </div>
-                          </button>
-                          <button class="btn my-1 w-100 text-nowrap text-left">
-                            <div class="row p-0 m-0">
-                              <span class="col p-0 m-0">Thể Thao & Du Lịch</span>
-                              <span class="col p-0 m-0">></span>
-                            </div>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="col category-child-1 p-0">
-                        <div class="category">
-                          <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                            <div class="row p-0 m-0">
-                              <span class="col p-0 m-0">Trang Phục thể thao</span>
-                              <span class="col p-0 m-0">></span>
-                            </div>
-                          </button>
-                          <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                            <div class="row p-0 m-0">
-                              <span class="col p-0 m-0">Giày Thể Thao</span>
-                              <span class="col p-0 m-0">></span>
-                            </div>
-                          </button>
-                        </div>
-                      </div>
-                      <div class="col category-child-2 p-0">
-                        <div class="category">
-                          <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                            <div class="row p-0 m-0">
-                              <span class="col p-0 m-0">Giày Sneaker Thể Thao</span>
-                              <!-- <span class="col p-0 m-0">></span> -->
-                            </div>
-                          </button>
-                          <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                            <div class="row p-0 m-0">
-                              <span class="col p-0 m-0">Giày Chạy Bộ</span>
-                              <!-- <span class="col p-0 m-0">></span> -->
-                            </div>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <!-- Button continute -->
+              <div class="div-button-continute py-3">
+                <a href="new.html" class="btn btn-danger">
+                  Tiếp theo
+                </a>
               </div>
             </div>
-          </div>
-          <!-- Selected show -->
-          <div class="div-selected-show py-3">
-            <span class="span-selected-show">
-              <span>Đã chọn&nbsp;:&nbsp;</span>&nbsp;<span class="text-danger">Thể Thao & Du Lịch > Giày Thể Thao > Giày
-                Chạy Bộ </span>
-            </span>
-          </div>
-          <!-- Button continute -->
-          <div class="div-button-continute py-3">
-            <a href="new.html" class="btn btn-danger">
-              Tiếp theo
-            </a>
           </div>
         </div>
       </div>
