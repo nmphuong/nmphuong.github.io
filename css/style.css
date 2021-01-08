@@ -91,7 +91,7 @@
   .text-right {
     text-align: left!important;
   }
-  #div-category-select {
+  .div-category-select {
     min-width: 640px;
   }
 }
