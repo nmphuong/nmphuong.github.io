@@ -4,145 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Category</title>
+  <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+  .btn-custorm-wh {
+    width: 200px;
+    height: 50px;
+  }
+
+  .area {
+    position: relative;
+    background: #ffb53f;
+    height: 100vh;
+    width: 100%
+  }
+
+  .moving {
+    margin-bottom: 0;
+  }
+
+  .cancel {
+    background: red;
+    width: 200px;
+    height: 50px;
+    z-index: 1;
+  }
+
+  .cancel2 {
+    position: absolute;
+    top: 70%;
+    left: 44%;
+  }
+</style>
 
 <body>
-  <div class="main mh-100">
-    <div class="mh-100">
-      <div class="mh-100">
-        <div class="row p-0 m-0 position-relative">
-          <div class="contain container-fluid">
-            <div class="bg-white col-12">
-              <!-- Section 1 tile page -->
-              <div class="title py-3">
-                <p class="h4 font-weight-bold">
-                  Thêm 1 sản phẩm mới
-                </p>
-                <p>
-                  Vui lòng chọn ngành hàng phù hợp cho sản phẩm của bạn.
-                </p>
-                <hr class="bg-dark mb-3 mt-5" />
-              </div>
-              <!-- Section 2 input name product -->
-              <div class="name-product py-3">
-                <div class="col-12 p-0 m-0">
-                  <div>
-                    <label for="" class="text-nowrap">
-                      Tên sản phẩm:&nbsp;
-                    </label>
-                  </div>
-                  <div class="div-input-name-product position-relative">
-                    <input type="text" placeholder="Nhập vào" class="input-name-product form-control" />
-                    <span class="length-character-input-name-product position-absolute">
-                      0/120
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Section 3 Select category -->
-              <div class="div-select-category py-3">
-                <div class="col-12 p-0 m-0">
-                  <!-- Search name category -->
-                  <div class="search-category">
-                    <div class="row p-0 m-0">
-                      <div class="col-lg-6 p-0 m-0">
-                        <div class="w-100 position-relative">
-                          <input type="text" placeholder="Nhập tên ngành hàng"
-                            class="input-name-category form-control" />
-                          <button class="button-search-name-category position-absolute bg-none border-0">
-                            Q
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Select name category -->
-                  <div class="div-select-category">
-                    <div class="row p-0 m-0">
-                      <div class="col-12 p-0 m-0">
-                        <div id="div-category-select" class="div-category-select d-flex p-0 m-0 py-4">
-                          <div class="col category-parent p-0">
-                            <div class="category w-100">
-                              <button class="btn my-1 w-100 text-nowrap text-left">
-                                <div class="row p-0 m-0">
-                                  <span class="col p-0 m-0">Bách Hoá Online</span>
-                                  <span class="col p-0 m-0 d-flex justify-content-end">></span>
-                                </div>
-                              </button>
-                              <button class="btn my-1 w-100 text-nowrap text-left">
-                                <div class="row p-0 m-0">
-                                  <span class="col p-0 m-0">Thể Thao & Du Lịch</span>
-                                  <span class="col p-0 m-0 d-flex justify-content-end">></span>
-                                </div>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="col category-child-1 p-0">
-                            <div class="category">
-                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                                <div class="row p-0 m-0">
-                                  <span class="col p-0 m-0">Trang Phục thể thao</span>
-                                  <span class="col p-0 m-0 d-flex justify-content-end">></span>
-                                </div>
-                              </button>
-                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                                <div class="row p-0 m-0">
-                                  <span class="col p-0 m-0">Giày Thể Thao</span>
-                                  <span class="col p-0 m-0 d-flex justify-content-end">></span>
-                                </div>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="col category-child-2 p-0">
-                            <div class="category">
-                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                                <div class="row p-0 m-0">
-                                  <span class="col p-0 m-0">Giày Sneaker Thể Thao</span>
-                                  <!-- <span class="col p-0 m-0">></span> -->
-                                </div>
-                              </button>
-                              <button class="btn my-1 bg-none w-100 text-nowrap text-left">
-                                <div class="row p-0 m-0">
-                                  <span class="col p-0 m-0">Giày Chạy Bộ</span>
-                                  <!-- <span class="col p-0 m-0">></span> -->
-                                </div>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Selected show -->
-              <div class="div-selected-show py-3">
-                <span class="span-selected-show">
-                  <span>Đã chọn&nbsp;:&nbsp;</span>&nbsp;<span class="text-danger">Thể Thao & Du Lịch > Giày Thể Thao >
-                    Giày
-                    Chạy Bộ </span>
-                </span>
-              </div>
-              <!-- Button continute -->
-              <div class="div-button-continute py-3">
-                <a href="new.html" class="btn btn-danger">
-                  Tiếp theo
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+
+  <div class="area moving bg-danger w-100" style="height: 100vh">
+    <button class="cancel cancel2">Từ chối</button>
+    <div class="position-absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <p class="h4 text-warning text-uppercase font-weight-bold">
+        Làm người yêu Chiêu nhé Baby!
+      </p>
+      <div class="pt-5">
+        <a href="omg.html" id="ok" class="btn-custorm-wh btn btn-success">Đồng ý</a>
       </div>
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(() => {
+      $(".moving").on("mousemove", event => {
+        var leftMouse = event.pageX
+        var topMouse = event.pageY
+        var buttonLeft = $('.cancel').position().left
+        var buttonTop = $('.cancel').position().top
+        var buttonRight = buttonLeft + 200
+        var buttonBottom = buttonTop + 50
+        if (
+          (((leftMouse - buttonLeft <= 250) && (topMouse - buttonTop <= 100) && (leftMouse - buttonLeft >= -50) && (topMouse - buttonTop >= -50)))
+        ) {
+          $(".cancel2").css("top", Math.floor(Math.random() * innerHeight) + "px");
+          $(".cancel2").css("left", Math.floor(Math.random() * innerWidth) + "px");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
