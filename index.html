@@ -42,7 +42,7 @@
 <body>
 
   <div class="area moving bg-danger w-100" style="height: 100vh">
-    <button class="cancel cancel2">Từ chối</button>
+    <button id="cancel" class="cancel cancel2">Từ chối</button>
     <div class="position-absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
       <p class="h4 text-warning text-uppercase font-weight-bold">
         Làm người yêu anh nhé Baby!
@@ -60,6 +60,11 @@
     crossorigin="anonymous"></script>
   <script>
     $(document).ready(() => {
+      $('#cancel').on('click', () => {
+        alert('Không hợp lệ! Vui lòng thử lại!');
+        $(".cancel2").css("top", Math.floor(Math.random() * (innerHeight - 70)) + "px");
+        $(".cancel2").css("left", Math.floor(Math.random() * (innerWidth - 250)) + "px");
+      })
       $(".moving").on("mousemove", event => {
         var leftMouse = event.pageX
         var topMouse = event.pageY
@@ -67,11 +72,12 @@
         var buttonTop = $('.cancel').position().top
         var buttonRight = buttonLeft + 200
         var buttonBottom = buttonTop + 50
+        console.log(innerHeight)
         if (
           (((leftMouse - buttonLeft <= 250) && (topMouse - buttonTop <= 100) && (leftMouse - buttonLeft >= -50) && (topMouse - buttonTop >= -50)))
         ) {
-          $(".cancel2").css("top", Math.floor(Math.random() * innerHeight) + "px");
-          $(".cancel2").css("left", Math.floor(Math.random() * innerWidth) + "px");
+          $(".cancel2").css("top", Math.floor(Math.random() * (innerHeight - 70)) + "px");
+          $(".cancel2").css("left", Math.floor(Math.random() * (innerWidth - 250)) + "px");
         }
       });
     });
