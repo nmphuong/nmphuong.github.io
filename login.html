@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
+  <style>
+    #form-login {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      background: #ffffff6b;
+      box-shadow: 3px 3px 10px #000000bf;
+    }
+
+    input {
+      outline: none !important;
+      border: none !important;
+      background: #ffffff6b !important;
+      box-shadow: none !important;
+    }
+
+    input:focus,
+    input:hover {
+      outline: none !important;
+      border: none !important;
+      background: #ffffff6b !important;
+      box-shadow: 3px 3px 10px #000000bf !important;
+    }
+
+    #btn-login {
+      color: rgb(160, 160, 160);
+      outline: none !important;
+      border: none !important;
+      background: #ffffff6b !important;
+      box-shadow: none !important;
+    }
+
+    #btn-login:hover {
+      outline: none !important;
+      border: none !important;
+      background: #ffffff6b !important;
+      color: rgb(91, 91, 91);
+      box-shadow: 3px 3px 10px #000000bf !important;
+    }
+
+    body {
+      background-image: url('./bg/7d7c79f57f2bf8fc2b43b9a5e5a2a96b.gif');
+      background-position: inherit;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes changeColorText {
+      0% {
+        color: red;
+      }
+
+      17% {
+        color: orange;
+      }
+
+      34% {
+        color: yellow;
+      }
+
+      50% {
+        color: blue;
+      }
+
+      67% {
+        color: blue;
+      }
+
+      84% {
+        color: gray;
+      }
+
+      100% {
+        color: violet;
+      }
+    }
+
+    #text {
+      animation: changeColorText 7s infinite;
+    }
+
+    * {
+      font-family: 'Fira Sans Condensed', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <script>
+    localStorage.removeItem('6SPYsIiI4RqwFCdZgjAXmBDYscsO8FK4')
+  </script>
+
+  <div class="position-absolute p-3" id="form-login">
+    <p id="text" class="h4 font-weight-bold text-center w-100">
+      Đăng nhập
+    </p>
+    <br />
+    <input class="form-control" type="text" placeholder="Username..." id="username">
+    <br />
+    <input class="form-control" type="password" placeholder="Password..." id="password">
+    <br />
+    <div class="w-100 d-flex justify-content-center">
+      <button class="btn" id="btn-login">Đăng nhập</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(() => {
+      $('#username').val('')
+      $('#password').val('')
+      $('#btn-login').on('click', () => {
+        var username = $('#username').val()
+        var password = $('#password').val()
+        if (username == 'loveyou' && password == 'loveyou') {
+          window.location.href = 'index.html'
+          localStorage.setItem('6SPYsIiI4RqwFCdZgjAXmBDYscsO8FK4', true)
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>
