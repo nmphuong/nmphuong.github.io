@@ -12,9 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
   <style>
     #form-login {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      width: 260px;
+      height: 260px;
+      top: 35%;
+      left: 40%;
       border-radius: 5px;
       background: #ffffff6b;
       box-shadow: 3px 3px 10px #000000bf;
@@ -123,6 +124,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="./js/vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector("#form-login"), {
+      max: 15,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2
+    });
+    VanillaTilt.init(document.querySelectorAll("#form-login"));
+  </script>
 
   <script>
     $(document).ready(() => {
