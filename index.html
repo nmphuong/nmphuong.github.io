@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khao sat</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <style>
   .btn-custorm-wh {
@@ -54,28 +53,28 @@
   </script>
 
   <div id="main" class="area moving w-100" style="height: 100vh">
-    <button style="border: none; border-radius: 5px;" id="cancel" class="text-white cancel cancel2">Từ chối</button>
+    <button style="border: none; border-radius: 5px;" id="cancel" class="text-white cancel cancel2">Refuse</button>
     <div class="position-absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
       <p class="h4 text-warning text-uppercase font-weight-bold">
-        Làm người yêu anh nhé baby!
+        Be my lover baby!
       </p>
       <div class="pt-5">
-        <a href="omg.html" id="ok" class="btn-custorm-wh btn btn-success">Đồng ý</a>
+        <button id="ok" class="btn-custorm-wh btn btn-success">Agree</a>
       </div>
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script>
     $(document).ready(() => {
       $('#cancel').on('click', () => {
-        alert('Không hợp lệ! Vui lòng thử lại!');
+        alert('Illegal! Please try again!');
         $(".cancel2").css("top", Math.floor(Math.random() * (innerHeight - 70)) + "px");
         $(".cancel2").css("left", Math.floor(Math.random() * (innerWidth - 250)) + "px");
+      })
+      $('#ok').on('click', () => {
+        window.location.href = 'thanks.html'
       })
       $(".moving").on("mousemove", event => {
         var leftMouse = event.pageX
